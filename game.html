@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>  
+	<head>   
+			<meta charset="UTF-8">   
+			<title>Game Play</title>
+	</head> 		
+<style>
+html { 
+  background: url(jeoback.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+    font-size: 49px;
+	font-family: "Comic Sans", Comic Sans MS, cursive;
+	color:white;
+	display:inline;
+	float:left;
+}
+h2{
+	font-size: 49px;
+	font-family: "Comic Sans", Comic Sans MS, cursive;
+	color:white;
+	display:inline;
+	float:right;
+}
+table{
+	width: 75%;
+	padding: 2cm;
+	float:center;
+	vertical-align: center;
+	background-color:black;
+}
+table, th, td {
+    border: 3px solid white;
+	border-collapse: collapse;
+	
+}
+td {
+    padding: 2px;
+    text-align: center;
+	height:80px;
+	width:150px;
+}
+th{
+	padding: 0px;
+    text-align: center;
+}
+br {
+        line-height: 1500%;
+     }
+button[name=btn1] {
+ background: #23a323;
+  background-image: -webkit-linear-gradient(top, #23a323, #0d540d);
+  background-image: -moz-linear-gradient(top, #23a323, #0d540d);
+  background-image: -ms-linear-gradient(top, #23a323, #0d540d);
+  background-image: -o-linear-gradient(top, #23a323, #0d540d);
+  background-image: linear-gradient(to bottom, #23a323, #0d540d);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 6px;
+  text-decoration: none;
+}
+
+button[name=btn1]:hover {
+  background: #35fa35;
+  background-image: -webkit-linear-gradient(top, #35fa35, #0ead0e);
+  background-image: -moz-linear-gradient(top, #35fa35, #0ead0e);
+  background-image: -ms-linear-gradient(top, #35fa35, #0ead0e);
+  background-image: -o-linear-gradient(top, #35fa35, #0ead0e);
+  background-image: linear-gradient(to bottom, #35fa35, #0ead0e);
+  text-decoration: none;
+}	 
+button[name=btn2] {
+background: #bd1818;
+  background-image: -webkit-linear-gradient(top, #bd1818, #660916);
+  background-image: -moz-linear-gradient(top, #bd1818, #660916);
+  background-image: -ms-linear-gradient(top, #bd1818, #660916);
+  background-image: -o-linear-gradient(top, #bd1818, #660916);
+  background-image: linear-gradient(to bottom, #bd1818, #660916);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 6px;
+  text-decoration: none;
+}
+
+button[name=btn2]:hover {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #a30202);
+  background-image: -moz-linear-gradient(top, #ff0000, #a30202);
+  background-image: -ms-linear-gradient(top, #ff0000, #a30202);
+  background-image: -o-linear-gradient(top, #ff0000, #a30202);
+  background-image: linear-gradient(to bottom, #ff0000, #a30202);
+  text-decoration: none;
+}	 
+button[name=btn3] {
+  background: #093bb8;
+  background-image: -webkit-linear-gradient(top, #093bb8, #033061);
+  background-image: -moz-linear-gradient(top, #093bb8, #033061);
+  background-image: -ms-linear-gradient(top, #093bb8, #033061);
+  background-image: -o-linear-gradient(top, #093bb8, #033061);
+  background-image: linear-gradient(to bottom, #093bb8, #033061);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 6px;
+  text-decoration: none;
+}
+
+button[name=btn3]:hover {
+   background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #00619e);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #00619e);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #00619e);
+  background-image: -o-linear-gradient(top, #3cb0fd, #00619e);
+  background-image: linear-gradient(to bottom, #3cb0fd, #00619e);
+  text-decoration: none;
+}	 
+button[name=btn4] {
+background: #e6d707;
+  background-image: -webkit-linear-gradient(top, #e6d707, #7a752c);
+  background-image: -moz-linear-gradient(top, #e6d707, #7a752c);
+  background-image: -ms-linear-gradient(top, #e6d707, #7a752c);
+  background-image: -o-linear-gradient(top, #e6d707, #7a752c);
+  background-image: linear-gradient(to bottom, #e6d707, #7a752c);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 6px;
+  text-decoration: none;
+}
+
+button[name=btn4]:hover {
+  background: #eeff00;
+  background-image: -webkit-linear-gradient(top, #eeff00, #868f06);
+  background-image: -moz-linear-gradient(top, #eeff00, #868f06);
+  background-image: -ms-linear-gradient(top, #eeff00, #868f06);
+  background-image: -o-linear-gradient(top, #eeff00, #868f06);
+  background-image: linear-gradient(to bottom, #eeff00, #868f06);
+  text-decoration: none;
+}	 
+button[name=btn5] {
+ background: #8507eb;
+  background-image: -webkit-linear-gradient(top, #8507eb, #480082);
+  background-image: -moz-linear-gradient(top, #8507eb, #480082);
+  background-image: -ms-linear-gradient(top, #8507eb, #480082);
+  background-image: -o-linear-gradient(top, #8507eb, #480082);
+  background-image: linear-gradient(to bottom, #8507eb, #480082);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 6px;
+  text-decoration: none;
+}
+
+button[name=btn5]:hover {
+  background: #b957fa;
+  background-image: -webkit-linear-gradient(top, #b957fa, #5f009e);
+  background-image: -moz-linear-gradient(top, #b957fa, #5f009e);
+  background-image: -ms-linear-gradient(top, #b957fa, #5f009e);
+  background-image: -o-linear-gradient(top, #b957fa, #5f009e);
+  background-image: linear-gradient(to bottom, #b957fa, #5f009e);
+  text-decoration: none;
+}	 
+</style>  
+		<body>
+			<form>
+			<h1 style="text-align:left;">Welcome Eldhose, </h1>
+			<h2 style="text-align:right;">Winnnings $0 </h2>
+			<br>
+			<p>
+			<center>
+			<table>
+			  <tr>
+    			<th><button type="button" style="height:85px; width:325px"name="btn1">AUDI</button></th>
+			    <th><button type="button" style="height:85px; width:325px"name="btn2">BMW</button></th>
+			    <th><button type="button" style="height:85px; width:325px"name="btn3">BENTLY</button></th>
+				<th><button type="button" style="height:85px; width:325px"name="btn4">LAMBHORGINI</button></th>
+				<th><button type="button" style="height:85px; width:325px"name="btn5">MERCEDES</button></th>
+			  </tr>
+			  <tr>
+				<td><button type="button" style="height:60px; width:150px"name="btn1">$100</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn2">$100</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn3">$100</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn4">$100</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn5">$100</button></td>
+			  </tr>
+			 <tr>
+				<td><button type="button" style="height:60px; width:150px"name="btn1">$200</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn2">$200</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn3">$200</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn4">$200</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn5">$200</button></td>
+			  </tr>
+			  <tr>
+				<td><button type="button" style="height:60px; width:150px"name="btn1">$300</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn2">$300</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn3">$300</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn4">$300</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn5">$300</button></td>
+			  </tr>
+			  <tr>
+				<td><button type="button" style="height:60px; width:150px"name="btn1">$400</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn2">$400</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn3">$400</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn4">$400</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn5">$400</button></td>
+			  </tr>
+			  <tr>
+				<td><button type="button" style="height:60px; width:150px"name="btn1">$500</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn2">$500</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn3">$500</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn4">$500</button></td>
+				<td><button type="button" style="height:60px; width:150px"name="btn5">$500</button></td>
+			  </tr>
+			</table>
+			</center>
+			</p>
+			</form>	
+		</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

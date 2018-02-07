@@ -1,0 +1,10 @@
+Sessions made coding a lot easier for the jeopardy project. I used sessions multiple times in my Sheridan jeopardy for the completeness of the whole project. 
+The first place I used sessions was to store the name of the user so that it doesn’t disappear when the page reloads. I created a session in my loginservlet and 
+set the name as well as the score to 0. So that all the users have their own scores and not just one score in general. And in the same place I have two more session 
+parameters to store the random question numbers for the daily double. In my next servlet I assign variables in session to store the question number, parameter to disable 
+the button and a counter to count the number of questions user read which is used to load the you win page. Along with that I have a parameter to store my current question 
+and options that I get from logic class. In my third and final servlet I just change value from bean on basics on the question answered. In my game board jsp page I get 
+value from session to disable a button. Where as in questions jsp page I get the question, the value of question, and options to be displayed. In my daily double jsp page 
+I get the value from the session and modify it according to the user’s choice and then set it to the session again. So as you can see without sessions my project wouldn’t 
+be even possible. By using sessions, I was able to implement multiple user access. Without sessions only player would have played at a time. Daily double is another thing 
+which would be really hard without out sessions. Basically sessions made the coding a lot easier for this project.

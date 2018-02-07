@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-class>ca.SheridanJeopardy.controllers.LoginServlet</servlet-class>
+        <servlet-name>MrServy</servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <url-pattern>/login</url-pattern>
+        <servlet-name>MrServy</servlet-name>
+    </servlet-mapping>
+    <servlet>
+        <servlet-class>ca.SheridanJeopardy.controllers.PickQuestion</servlet-class>
+        <servlet-name>MrServyQuestion</servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <url-pattern>/gameplay</url-pattern>
+        <servlet-name>MrServyQuestion</servlet-name>
+    </servlet-mapping>
+    <servlet>
+        <servlet-class>ca.SheridanJeopardy.controllers.AnswerSelect</servlet-class>
+        <servlet-name>MrServyAnswer</servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <url-pattern>/cont</url-pattern>
+        <servlet-name>MrServyAnswer</servlet-name>
+    </servlet-mapping>
+</web-app>
